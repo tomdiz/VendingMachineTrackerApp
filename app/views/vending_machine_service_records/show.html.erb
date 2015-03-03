@@ -1,0 +1,74 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Merchantid:</strong>
+  <%= @vending_machine_service_record.merchantID %>
+</p>
+
+<p>
+  <strong>Servicetime:</strong>
+  <%= @vending_machine_service_record.serviceTime %>
+</p>
+
+<p>
+  <strong>Serialnumber:</strong>
+  <%= @vending_machine_service_record.serialNumber %>
+</p>
+
+<p>
+  <strong>Phototaken:</strong>
+  <%= @vending_machine_service_record.photoTaken %>
+</p>
+
+<p>
+  <strong>Servicenotes:</strong>
+  <%= @vending_machine_service_record.serviceNotes %>
+</p>
+
+<p>
+  <strong>Ticketsadded:</strong>
+  <%= @vending_machine_service_record.ticketsAdded %>
+</p>
+
+<p>
+  <strong>Ticketsredeemed:</strong>
+  <%= @vending_machine_service_record.ticketsRedeemed %>
+</p>
+
+<p>
+  <strong>Ticketsdispensed:</strong>
+  <%= @vending_machine_service_record.ticketsDispensed %>
+</p>
+
+<p>
+  <strong>Dailyhighscore:</strong>
+  <%= @vending_machine_service_record.dailyHighScore %>
+</p>
+
+<p>
+  <strong>Numberofgamesplayed:</strong>
+  <%= @vending_machine_service_record.numberOfGamesPlayed %>
+</p>
+
+<p>
+  <strong>Gamemode:</strong>
+  <%= @vending_machine_service_record.gameMode %>
+</p>
+
+<p>
+  <strong>Lightconfiguration:</strong>
+  <%= @vending_machine_service_record.lightConfiguration %>
+</p>
+
+<p>
+  <strong>Creditsadded:</strong>
+  <%= @vending_machine_service_record.creditsAdded %>
+</p>
+
+<p>
+  <strong>Lastscore:</strong>
+  <%= @vending_machine_service_record.lastScore %>
+</p>
+
+<%= link_to 'Edit', edit_vending_machine_service_record_path(@vending_machine_service_record) %> |
+<%= link_to 'Back', vending_machine_service_records_path %>

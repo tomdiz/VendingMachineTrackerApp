@@ -1,0 +1,73 @@
+<%= form_for(@vending_machine_service_record) do |f| %>
+  <% if @vending_machine_service_record.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@vending_machine_service_record.errors.count, "error") %> prohibited this vending_machine_service_record from being saved:</h2>
+
+      <ul>
+      <% @vending_machine_service_record.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :merchantID %><br>
+    <%= f.text_field :merchantID %>
+  </div>
+  <div class="field">
+    <%= f.label :serviceTime %><br>
+    <%= f.number_field :serviceTime %>
+  </div>
+  <div class="field">
+    <%= f.label :serialNumber %><br>
+    <%= f.text_field :serialNumber %>
+  </div>
+  <div class="field">
+    <%= f.label :photoTaken %><br>
+    <%= f.number_field :photoTaken %>
+  </div>
+  <div class="field">
+    <%= f.label :serviceNotes %><br>
+    <%= f.text_field :serviceNotes %>
+  </div>
+  <div class="field">
+    <%= f.label :ticketsAdded %><br>
+    <%= f.number_field :ticketsAdded %>
+  </div>
+  <div class="field">
+    <%= f.label :ticketsRedeemed %><br>
+    <%= f.number_field :ticketsRedeemed %>
+  </div>
+  <div class="field">
+    <%= f.label :ticketsDispensed %><br>
+    <%= f.number_field :ticketsDispensed %>
+  </div>
+  <div class="field">
+    <%= f.label :dailyHighScore %><br>
+    <%= f.number_field :dailyHighScore %>
+  </div>
+  <div class="field">
+    <%= f.label :numberOfGamesPlayed %><br>
+    <%= f.number_field :numberOfGamesPlayed %>
+  </div>
+  <div class="field">
+    <%= f.label :gameMode %><br>
+    <%= f.text_field :gameMode %>
+  </div>
+  <div class="field">
+    <%= f.label :lightConfiguration %><br>
+    <%= f.number_field :lightConfiguration %>
+  </div>
+  <div class="field">
+    <%= f.label :creditsAdded %><br>
+    <%= f.number_field :creditsAdded %>
+  </div>
+  <div class="field">
+    <%= f.label :lastScore %><br>
+    <%= f.number_field :lastScore %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Serialnumber:</strong>
+  <%= @vending_machine_status.serialNumber %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @vending_machine_status.type %>
+</p>
+
+<p>
+  <strong>Row:</strong>
+  <%= @vending_machine_status.row %>
+</p>
+
+<p>
+  <strong>Total:</strong>
+  <%= @vending_machine_status.total %>
+</p>
+
+<%= link_to 'Edit', edit_vending_machine_status_path(@vending_machine_status) %> |
+<%= link_to 'Back', vending_machine_statuses_path %>

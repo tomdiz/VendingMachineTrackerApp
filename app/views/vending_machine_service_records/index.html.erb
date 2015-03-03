@@ -1,0 +1,53 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Vending Machine Service Records</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Merchantid</th>
+      <th>Servicetime</th>
+      <th>Serialnumber</th>
+      <th>Phototaken</th>
+      <th>Servicenotes</th>
+      <th>Ticketsadded</th>
+      <th>Ticketsredeemed</th>
+      <th>Ticketsdispensed</th>
+      <th>Dailyhighscore</th>
+      <th>Numberofgamesplayed</th>
+      <th>Gamemode</th>
+      <th>Lightconfiguration</th>
+      <th>Creditsadded</th>
+      <th>Lastscore</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @vending_machine_service_records.each do |vending_machine_service_record| %>
+      <tr>
+        <td><%= vending_machine_service_record.merchantID %></td>
+        <td><%= vending_machine_service_record.serviceTime %></td>
+        <td><%= vending_machine_service_record.serialNumber %></td>
+        <td><%= vending_machine_service_record.photoTaken %></td>
+        <td><%= vending_machine_service_record.serviceNotes %></td>
+        <td><%= vending_machine_service_record.ticketsAdded %></td>
+        <td><%= vending_machine_service_record.ticketsRedeemed %></td>
+        <td><%= vending_machine_service_record.ticketsDispensed %></td>
+        <td><%= vending_machine_service_record.dailyHighScore %></td>
+        <td><%= vending_machine_service_record.numberOfGamesPlayed %></td>
+        <td><%= vending_machine_service_record.gameMode %></td>
+        <td><%= vending_machine_service_record.lightConfiguration %></td>
+        <td><%= vending_machine_service_record.creditsAdded %></td>
+        <td><%= vending_machine_service_record.lastScore %></td>
+        <td><%= link_to 'Show', vending_machine_service_record %></td>
+        <td><%= link_to 'Edit', edit_vending_machine_service_record_path(vending_machine_service_record) %></td>
+        <td><%= link_to 'Destroy', vending_machine_service_record, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Vending machine service record', new_vending_machine_service_record_path %>

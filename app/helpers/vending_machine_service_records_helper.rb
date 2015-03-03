@@ -1,0 +1,2 @@
+module VendingMachineServiceRecordsHelper
+end

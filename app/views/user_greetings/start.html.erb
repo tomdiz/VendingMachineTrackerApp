@@ -1,0 +1,4 @@
+<h1>Vender Start</h1>
+<%= javascript_include_tag "//www.google.com/jsapi", "chartkick" %>
+<%= pie_chart VendingMachine.group(:locationName).count %>
+<%= pie_chart VendingMachineServiceRecord.group(:ticketsRedeemed).count %>

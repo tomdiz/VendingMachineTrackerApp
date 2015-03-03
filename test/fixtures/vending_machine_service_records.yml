@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  merchantID: MyString
+  serviceTime: 1
+  serialNumber: MyString
+  photoTaken: 1
+  serviceNotes: MyString
+  ticketsAdded: 1
+  ticketsRedeemed: 1
+  ticketsDispensed: 1
+  dailyHighScore: 1
+  numberOfGamesPlayed: 1
+  gameMode: MyString
+  lightConfiguration: 1
+  creditsAdded: 1
+  lastScore: 1
+
+two:
+  merchantID: MyString
+  serviceTime: 1
+  serialNumber: MyString
+  photoTaken: 1
+  serviceNotes: MyString
+  ticketsAdded: 1
+  ticketsRedeemed: 1
+  ticketsDispensed: 1
+  dailyHighScore: 1
+  numberOfGamesPlayed: 1
+  gameMode: MyString
+  lightConfiguration: 1
+  creditsAdded: 1
+  lastScore: 1

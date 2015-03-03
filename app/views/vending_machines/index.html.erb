@@ -1,0 +1,75 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Vending Machines</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Merchantid</th>
+      <th>Serialnumber</th>
+      <th>Objectname</th>
+      <th>Locationname</th>
+      <th>Notes</th>
+      <th>Machineid</th>
+      <th>Gameminorversion</th>
+      <th>Gamemajorversion</th>
+      <th>Embeddedauxboardminor</th>
+      <th>Embeddedauxboardmajor</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+      <th>Numberphotos</th>
+      <th>Lastscore</th>
+      <th>Currentlightconfiguration</th>
+      <th>Currentgamemode</th>
+      <th>Currentcredits</th>
+      <th>Machinetype</th>
+      <th>Numbergamesplayed</th>
+      <th>Totalnumberticketsadded</th>
+      <th>Totalnumberticketsredeemed</th>
+      <th>Totalnumberticketsprinted</th>
+      <th>Totalnumbersuccessvends</th>
+      <th>Totalnumbererrorvends</th>
+      <th>Numbervendrows</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @vending_machines.each do |vending_machine| %>
+      <tr>
+        <td><%= vending_machine.merchantID %></td>
+        <td><%= vending_machine.serialNumber %></td>
+        <td><%= vending_machine.objectName %></td>
+        <td><%= vending_machine.locationName %></td>
+        <td><%= vending_machine.notes %></td>
+        <td><%= vending_machine.machineID %></td>
+        <td><%= vending_machine.gameMinorVersion %></td>
+        <td><%= vending_machine.gameMajorVersion %></td>
+        <td><%= vending_machine.embeddedAuxBoardMinor %></td>
+        <td><%= vending_machine.embeddedAuxBoardMajor %></td>
+        <td><%= vending_machine.latitude %></td>
+        <td><%= vending_machine.longitude %></td>
+        <td><%= vending_machine.numberPhotos %></td>
+        <td><%= vending_machine.lastScore %></td>
+        <td><%= vending_machine.currentLightConfiguration %></td>
+        <td><%= vending_machine.currentGameMode %></td>
+        <td><%= vending_machine.currentCredits %></td>
+        <td><%= vending_machine.machineType %></td>
+        <td><%= vending_machine.numberGamesPlayed %></td>
+        <td><%= vending_machine.totalNumberTicketsAdded %></td>
+        <td><%= vending_machine.totalNumberTicketsRedeemed %></td>
+        <td><%= vending_machine.totalNumberTicketsPrinted %></td>
+        <td><%= vending_machine.totalNumberSuccessVends %></td>
+        <td><%= vending_machine.totalNumberErrorVends %></td>
+        <td><%= vending_machine.numberVendRows %></td>
+        <td><%= link_to 'Show', vending_machine %></td>
+        <td><%= link_to 'Edit', edit_vending_machine_path(vending_machine) %></td>
+        <td><%= link_to 'Destroy', vending_machine, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Vending machine', new_vending_machine_path %>

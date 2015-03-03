@@ -1,0 +1,1 @@
+json.extract! @vending_machine_service_record, :id, :merchantID, :serviceTime, :serialNumber, :photoTaken, :serviceNotes, :ticketsAdded, :ticketsRedeemed, :ticketsDispensed, :dailyHighScore, :numberOfGamesPlayed, :gameMode, :lightConfiguration, :creditsAdded, :lastScore, :created_at, :updated_at

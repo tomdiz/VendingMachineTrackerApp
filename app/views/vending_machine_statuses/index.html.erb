@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Vending Machine Statuses</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Serialnumber</th>
+      <th>Type</th>
+      <th>Row</th>
+      <th>Total</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @vending_machine_statuses.each do |vending_machine_status| %>
+      <tr>
+        <td><%= vending_machine_status.serialNumber %></td>
+        <td><%= vending_machine_status.type %></td>
+        <td><%= vending_machine_status.row %></td>
+        <td><%= vending_machine_status.total %></td>
+        <td><%= link_to 'Show', vending_machine_status %></td>
+        <td><%= link_to 'Edit', edit_vending_machine_status_path(vending_machine_status) %></td>
+        <td><%= link_to 'Destroy', vending_machine_status, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Vending machine status', new_vending_machine_status_path %>

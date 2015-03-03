@@ -1,0 +1,2 @@
+module VendingMachineStatusesHelper
+end

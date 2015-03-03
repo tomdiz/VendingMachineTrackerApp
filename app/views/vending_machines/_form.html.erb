@@ -1,0 +1,117 @@
+<%= form_for(@vending_machine) do |f| %>
+  <% if @vending_machine.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@vending_machine.errors.count, "error") %> prohibited this vending_machine from being saved:</h2>
+
+      <ul>
+      <% @vending_machine.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :merchantID %><br>
+    <%= f.text_field :merchantID %>
+  </div>
+  <div class="field">
+    <%= f.label :serialNumber %><br>
+    <%= f.text_field :serialNumber %>
+  </div>
+  <div class="field">
+    <%= f.label :objectName %><br>
+    <%= f.text_field :objectName %>
+  </div>
+  <div class="field">
+    <%= f.label :locationName %><br>
+    <%= f.text_field :locationName %>
+  </div>
+  <div class="field">
+    <%= f.label :notes %><br>
+    <%= f.text_field :notes %>
+  </div>
+  <div class="field">
+    <%= f.label :machineID %><br>
+    <%= f.text_field :machineID %>
+  </div>
+  <div class="field">
+    <%= f.label :gameMinorVersion %><br>
+    <%= f.number_field :gameMinorVersion %>
+  </div>
+  <div class="field">
+    <%= f.label :gameMajorVersion %><br>
+    <%= f.number_field :gameMajorVersion %>
+  </div>
+  <div class="field">
+    <%= f.label :embeddedAuxBoardMinor %><br>
+    <%= f.number_field :embeddedAuxBoardMinor %>
+  </div>
+  <div class="field">
+    <%= f.label :embeddedAuxBoardMajor %><br>
+    <%= f.number_field :embeddedAuxBoardMajor %>
+  </div>
+  <div class="field">
+    <%= f.label :latitude %><br>
+    <%= f.text_field :latitude %>
+  </div>
+  <div class="field">
+    <%= f.label :longitude %><br>
+    <%= f.text_field :longitude %>
+  </div>
+  <div class="field">
+    <%= f.label :numberPhotos %><br>
+    <%= f.number_field :numberPhotos %>
+  </div>
+  <div class="field">
+    <%= f.label :lastScore %><br>
+    <%= f.number_field :lastScore %>
+  </div>
+  <div class="field">
+    <%= f.label :currentLightConfiguration %><br>
+    <%= f.number_field :currentLightConfiguration %>
+  </div>
+  <div class="field">
+    <%= f.label :currentGameMode %><br>
+    <%= f.number_field :currentGameMode %>
+  </div>
+  <div class="field">
+    <%= f.label :currentCredits %><br>
+    <%= f.number_field :currentCredits %>
+  </div>
+  <div class="field">
+    <%= f.label :machineType %><br>
+    <%= f.text_field :machineType %>
+  </div>
+  <div class="field">
+    <%= f.label :numberGamesPlayed %><br>
+    <%= f.number_field :numberGamesPlayed %>
+  </div>
+  <div class="field">
+    <%= f.label :totalNumberTicketsAdded %><br>
+    <%= f.number_field :totalNumberTicketsAdded %>
+  </div>
+  <div class="field">
+    <%= f.label :totalNumberTicketsRedeemed %><br>
+    <%= f.number_field :totalNumberTicketsRedeemed %>
+  </div>
+  <div class="field">
+    <%= f.label :totalNumberTicketsPrinted %><br>
+    <%= f.number_field :totalNumberTicketsPrinted %>
+  </div>
+  <div class="field">
+    <%= f.label :totalNumberSuccessVends %><br>
+    <%= f.number_field :totalNumberSuccessVends %>
+  </div>
+  <div class="field">
+    <%= f.label :totalNumberErrorVends %><br>
+    <%= f.number_field :totalNumberErrorVends %>
+  </div>
+  <div class="field">
+    <%= f.label :numberVendRows %><br>
+    <%= f.number_field :numberVendRows %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

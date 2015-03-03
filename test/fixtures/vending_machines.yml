@@ -1,0 +1,55 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  merchantID: MyString
+  serialNumber: MyString
+  objectName: MyString
+  locationName: MyString
+  notes: MyString
+  machineID: MyString
+  gameMinorVersion: 1
+  gameMajorVersion: 1
+  embeddedAuxBoardMinor: 1
+  embeddedAuxBoardMajor: 1
+  latitude: 1.5
+  longitude: 1.5
+  numberPhotos: 1
+  lastScore: 1
+  currentLightConfiguration: 1
+  currentGameMode: 1
+  currentCredits: 1
+  machineType: MyString
+  numberGamesPlayed: 1
+  totalNumberTicketsAdded: 1
+  totalNumberTicketsRedeemed: 1
+  totalNumberTicketsPrinted: 1
+  totalNumberSuccessVends: 1
+  totalNumberErrorVends: 1
+  numberVendRows: 1
+
+two:
+  merchantID: MyString
+  serialNumber: MyString
+  objectName: MyString
+  locationName: MyString
+  notes: MyString
+  machineID: MyString
+  gameMinorVersion: 1
+  gameMajorVersion: 1
+  embeddedAuxBoardMinor: 1
+  embeddedAuxBoardMajor: 1
+  latitude: 1.5
+  longitude: 1.5
+  numberPhotos: 1
+  lastScore: 1
+  currentLightConfiguration: 1
+  currentGameMode: 1
+  currentCredits: 1
+  machineType: MyString
+  numberGamesPlayed: 1
+  totalNumberTicketsAdded: 1
+  totalNumberTicketsRedeemed: 1
+  totalNumberTicketsPrinted: 1
+  totalNumberSuccessVends: 1
+  totalNumberErrorVends: 1
+  numberVendRows: 1
